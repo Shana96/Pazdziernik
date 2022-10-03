@@ -16,11 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from ksiazki.views import hello, hello_name
+from ksiazki.views import hello, hello_name, start
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello', hello),
     # path('hello_name/<s>', hello_name)
-    path('hello_name', hello_name)
+    path('hello_name', hello_name),
+    path('start', start)
 ]
